@@ -19,7 +19,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     static final CameraPosition JTG = CameraPosition.builder()
-            .target(new LatLng(-6.858623, 111.642224))
+            .target(new LatLng(48.8584, 2.2945))
             .zoom(15)
             .bearing(0)
             .tilt(45)
@@ -45,33 +45,33 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         setContentView(R.layout.activity_main);
 
         house = new MarkerOptions()
-                .position(new LatLng(-6.886892, 111.654675))
-                .title("My House")
+                .position(new LatLng(48.8584, 2.2945))
+                .title("First Place")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_location_on_black_24dp));
 
         quba = new MarkerOptions()
-                .position(new LatLng(-6.887492, 111.656472))
-                .title("Masjid Ar-rahmah")
+                .position(new LatLng(48.8584, 2.2949))
+                .title("Second Place")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_location_on_black_24dp));
 
         pasar = new MarkerOptions()
-                .position(new LatLng(-6.879152, 111.658757))
-                .title("Pasar Jatirogo")
+                .position(new LatLng(48.8584, 2.2947))
+                .title("Third Place")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_location_on_black_24dp));
 
         kec = new MarkerOptions()
-                .position(new LatLng(-6.885809, 111.658339))
-                .title("Kantor Kec. Jatirogo")
+                .position(new LatLng(48.8584, 2.2942))
+                .title("Fourth Place")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_location_on_black_24dp));
 
         koramil = new MarkerOptions()
-                .position(new LatLng(-6.888232, 111.662722))
-                .title("Koramil Jatirogo")
+                .position(new LatLng(48.8584, 2.29451))
+                .title("Fifth Place")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_location_on_black_24dp));
 
         smp = new MarkerOptions()
-                .position(new LatLng(-6.884760, 111.657529))
-                .title("SMPN 1 Jatirogo")
+                .position(new LatLng(48.8584, 2.2950))
+                .title("Sixth Place")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_location_on_black_24dp));
 
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
